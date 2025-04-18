@@ -1,0 +1,76 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    display: flex;
+    background-color: #181818;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #202020;
+}
+
+/* Image Styling */
+.card .img {
+    flex-shrink: 0;
+    width: 40%;
+    max-width: 280px;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 0 0 12px;
+}
+
+/* Video Details Styling */
+.video_details {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.video_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+    text-align: left;
+}
+
+.video_metadata {
+    font-size: 14px;
+    color: #aaaaaa;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
